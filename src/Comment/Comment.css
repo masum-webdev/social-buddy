@@ -1,5 +1,7 @@
-img{
-  width: 50%;
-  
+img {
   border-radius: 50%;
+}
+
+.border {
+  border: 10px solid red;
 }

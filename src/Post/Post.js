@@ -4,8 +4,8 @@ import { PostContext } from '../App';
 import './Post.css'
 
 const Post = (props) => {
-  const [postData,setPostData]=useContext(PostContext);
-  const post=props.post;
+  const [postData, setPostData] = useContext(PostContext);
+  const post = props.post;
   const { id, title, body } = post;
   return (
     <div className="card post-card">
@@ -13,7 +13,7 @@ const Post = (props) => {
         <h5 className="card-title">{title}</h5>
         <p className="card-text">{body}</p>
         <Link to={`/post/${id}`} >
-          <button className="btn btn-success" onClick={()=>setPostData(post)}>See Comments</button>
+          <button className="btn btn-success" onClick={() => setPostData(post)}>See Comments</button>
         </Link>
       </div>
     </div>
